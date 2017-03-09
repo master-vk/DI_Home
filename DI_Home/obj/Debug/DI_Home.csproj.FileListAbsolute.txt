@@ -1,6 +1,6 @@
-c:\users\vadym\documents\visual studio 2015\Projects\DI_Home\DI_Home\bin\Debug\DI_Home.exe.config
-c:\users\vadym\documents\visual studio 2015\Projects\DI_Home\DI_Home\bin\Debug\DI_Home.exe
-c:\users\vadym\documents\visual studio 2015\Projects\DI_Home\DI_Home\bin\Debug\DI_Home.pdb
-c:\users\vadym\documents\visual studio 2015\Projects\DI_Home\DI_Home\obj\Debug\DI_Home.csprojResolveAssemblyReference.cache
-c:\users\vadym\documents\visual studio 2015\Projects\DI_Home\DI_Home\obj\Debug\DI_Home.exe
-c:\users\vadym\documents\visual studio 2015\Projects\DI_Home\DI_Home\obj\Debug\DI_Home.pdb
+C:\Users\Vadym\documents\visual studio 2015\Projects\DI_Home\DI_Home\bin\Debug\DI_Home.exe.config
+C:\Users\Vadym\documents\visual studio 2015\Projects\DI_Home\DI_Home\bin\Debug\DI_Home.exe
+C:\Users\Vadym\documents\visual studio 2015\Projects\DI_Home\DI_Home\bin\Debug\DI_Home.pdb
+C:\Users\Vadym\documents\visual studio 2015\Projects\DI_Home\DI_Home\obj\Debug\DI_Home.exe
+C:\Users\Vadym\documents\visual studio 2015\Projects\DI_Home\DI_Home\obj\Debug\DI_Home.pdb
+C:\Users\Vadym\documents\visual studio 2015\Projects\DI_Home\DI_Home\obj\Debug\DI_Home.csprojResolveAssemblyReference.cache
