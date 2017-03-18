@@ -10,3 +10,5 @@ C:\Users\Vadym\documents\visual studio 2015\Projects\DI_Home\Tests_DI\bin\Debug\
 C:\Users\Vadym\documents\visual studio 2015\Projects\DI_Home\Tests_DI\bin\Debug\Moq.xml
 C:\Users\Vadym\documents\visual studio 2015\Projects\DI_Home\Tests_DI\obj\Debug\Tests_DI.dll
 C:\Users\Vadym\documents\visual studio 2015\Projects\DI_Home\Tests_DI\obj\Debug\Tests_DI.pdb
+C:\Users\Vadym\documents\visual studio 2015\Projects\DI_Home\Tests_DI\bin\Debug\nunit.framework.dll
+C:\Users\Vadym\documents\visual studio 2015\Projects\DI_Home\Tests_DI\bin\Debug\nunit.framework.xml
