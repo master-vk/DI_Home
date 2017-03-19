@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleMessager.cs" />
+    <Compile Include="FileExtensionManager.cs" />
+    <Compile Include="IExtensionManager.cs" />
     <Compile Include="IMessager.cs" />
     <Compile Include="LogAnalyzer.cs" />
     <Compile Include="MemCalculator.cs" />

@@ -47,7 +47,45 @@ namespace Tests_DI
             la.IsValidFileName(file);
             Assert.AreEqual(expected, la.WasLastFileNameValid);
         }
+        [TestFixture]
+        public class LogAnalyzerTests
+        {
+            [Test]
+            public void
+            IsValidFileName_NameSupportedExtension_ReturnsTrue()
+            {
+                FakeExtensionManager myFakeManager = new FakeExtensionManager();
+                myFakeManager.WillBeValid = true;
+                LogAnalyzer log = new LogAnalyzer();
+                log.ExtensionManager = myFakeManager;
+                bool result = log.IsValidFileName("short.ext");
+                Assert.True(result);
+            }
+        }
+        [Test]
+        public void IsValidFileName_ExtManagerThrowsException_ReturnsFalse()
+        {
+            FakeExtensionManager myFakeManager = new FakeExtensionManager();
+            LogAnalyzer log = MakeAnalyzer();
 
+            myFakeManager.WillThrow = new Exception("");            
+            log.ExtensionManager = myFakeManager;
+
+            bool result = log.IsValidFileName("anything.anyextension");
+            Assert.False(result);
+        }
+        [Test]
+        public void IsValidFileName_SupportedExtension_ReturnsTrue()
+        {
+            FakeExtensionManager myFakeManager = new FakeExtensionManager();
+            LogAnalyzer log = MakeAnalyzer();
+
+            myFakeManager.WillThrow = new Exception("");
+            log.ExtensionManager = myFakeManager;
+
+            bool result = log.IsValidFileName("anything.anyextension");
+            Assert.True(result);
+        }
 
         private LogAnalyzer MakeAnalyzer()
         {

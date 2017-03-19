@@ -63,6 +63,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AlwaysValidFakeExtensionManager.cs" />
+    <Compile Include="FakeExtensionManager.cs" />
     <Compile Include="LogAnalizer_Test.cs" />
     <Compile Include="MemCalculator_Test.cs" />
     <Compile Include="Test_ConsoleManager.cs" />
