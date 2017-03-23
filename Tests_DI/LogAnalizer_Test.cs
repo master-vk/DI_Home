@@ -32,6 +32,14 @@ namespace Tests_DI
         }
 
         [Test]
+      
+        public void IsValidCreate_ExpectedObject(string fileName)
+        {
+
+            Assert.IsNull(ExtensionManagerFactory.customManager);
+            Assert.IsInstanceOf(new FileExtensionManager().GetType(), ExtensionManagerFactory.Create());
+        }
+        [Test]
         public void IsValidFileName_WhenCalled_ChangesWasLastFileNameValid()
         {
             LogAnalyzer la = MakeAnalyzer();
@@ -85,6 +93,35 @@ namespace Tests_DI
 
             bool result = log.IsValidFileName("anything.anyextension");
             Assert.True(result);
+        }
+        [Test]
+        public void overrideTest()
+        {
+            FakeExtensionManager stub = new FakeExtensionManager();
+            stub.WillBeValid = true;
+            TestableLogAnalyzer logan = new TestableLogAnalyzer();
+            bool result = logan.IsValidLogFileName("lfjile.ext");
+            Assert.True(result);
+        }
+
+        [Test]
+        public void overrideTestWithoutStub()
+        {
+            TestableLogAnalyzer logan = new TestableLogAnalyzer();
+            logan.IsSupported = true;
+            bool result = logan.IsValidLogFileName("file.ext");
+            Assert.True(result,"...");
+        }
+        [Test]
+        public void Analyze_TooShortFileName_CallsWebService()
+        {
+            FakeWebService mockService = new FakeWebService();
+            LogAnalyzer log = new LogAnalyzer(mockService);
+            string tooShortFileName ="abc.ext";
+
+            log.Analyze(tooShortFileName);
+
+            StringAssert.Contains("Too short name: abc.ext", mockService.LastError);
         }
 
         private LogAnalyzer MakeAnalyzer()

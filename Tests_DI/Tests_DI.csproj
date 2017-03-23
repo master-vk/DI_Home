@@ -65,8 +65,10 @@
   <ItemGroup>
     <Compile Include="AlwaysValidFakeExtensionManager.cs" />
     <Compile Include="FakeExtensionManager.cs" />
+    <Compile Include="FakeWebService.cs" />
     <Compile Include="LogAnalizer_Test.cs" />
     <Compile Include="MemCalculator_Test.cs" />
+    <Compile Include="TestableLogAnalyzer.cs" />
     <Compile Include="Test_ConsoleManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
