@@ -11,13 +11,19 @@ namespace DI_Home
     {
         private IExtensionManager manager;
         private IWebService service;
+        private ILogger logger;
+        public int MinNameLength { get; set; }
         public bool WasLastFileNameValid { get; set; }
         public IExtensionManager ExtensionManager
         {
             get { return manager; }
             set { manager = value; }
         }
-        
+
+        public LogAnalyzer(ILogger logger)
+        {
+            this.logger = logger;
+        }
         public LogAnalyzer(IWebService service)
         {
             this.service = service;
@@ -28,12 +34,14 @@ namespace DI_Home
         }
         public void Analyze(string fileName)
         {
-            if (fileName.Length < 8)
+
+            if (fileName.Length < MinNameLength)
             {
-                service.LogError("Too short name: " + fileName);
+                logger.LogError("Too short name: " + fileName);
             }
+
         }
-        
+
         public bool IsValidFileName(string fileName)
         {
             IExtensionManager mgr = new FileExtensionManager();

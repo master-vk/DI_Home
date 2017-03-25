@@ -8,6 +8,6 @@ namespace DI_Home
 {
     public interface IWebService
     {
-        void LogError(string message);
+        void Write(string message);
     }
 }

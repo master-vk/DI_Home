@@ -9,10 +9,13 @@ namespace Tests_DI
 {
     public class FakeWebService : IWebService
     {
-        public string LastError;
-        public void LogError(string message)
+        public Exception ToThrow;
+        public void Write(string message)
         {
-            LastError = message;
+            if (ToThrow != null)
+            {
+                throw ToThrow;
+            }
         }
     }
 }

@@ -1,0 +1,11 @@
+C:\Users\Vadym\Documents\Visual Studio 2015\Projects\DI_Home\.vs\DI_Home\10672\b\DI_Home\bin\Debug\DI_Home.exe.config
+C:\Users\Vadym\Documents\Visual Studio 2015\Projects\DI_Home\.vs\DI_Home\10672\b\DI_Home\bin\Debug\DI_Home.exe
+C:\Users\Vadym\Documents\Visual Studio 2015\Projects\DI_Home\.vs\DI_Home\10672\b\DI_Home\bin\Debug\DI_Home.pdb
+C:\Users\Vadym\Documents\Visual Studio 2015\Projects\DI_Home\.vs\DI_Home\10672\i\DI_Home\Debug\DI_Home.exe
+C:\Users\Vadym\Documents\Visual Studio 2015\Projects\DI_Home\.vs\DI_Home\10672\i\DI_Home\Debug\DI_Home.pdb
+C:\Users\klyachyn.vadym\Documents\Visual Studio 2015\Projects\DI_Home-master\.vs\DI_Home\2492\i\DI_Home\Debug\DI_Home.csprojResolveAssemblyReference.cache
+C:\Users\klyachyn.vadym\Documents\Visual Studio 2015\Projects\DI_Home-master\.vs\DI_Home\2492\i\DI_Home\Debug\DI_Home.exe
+C:\Users\klyachyn.vadym\Documents\Visual Studio 2015\Projects\DI_Home-master\.vs\DI_Home\2492\i\DI_Home\Debug\DI_Home.pdb
+C:\Users\klyachyn.vadym\Documents\Visual Studio 2015\Projects\DI_Home-master\.vs\DI_Home\1496\i\DI_Home\Debug\DI_Home.csprojResolveAssemblyReference.cache
+C:\Users\klyachyn.vadym\Documents\Visual Studio 2015\Projects\DI_Home-master\.vs\DI_Home\1496\i\DI_Home\Debug\DI_Home.exe
+C:\Users\klyachyn.vadym\Documents\Visual Studio 2015\Projects\DI_Home-master\.vs\DI_Home\1496\i\DI_Home\Debug\DI_Home.pdb

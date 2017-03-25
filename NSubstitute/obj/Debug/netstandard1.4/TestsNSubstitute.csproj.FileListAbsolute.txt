@@ -1,0 +1,7 @@
+C:\Users\Vadym\Documents\Visual Studio 2015\Projects\DI_Home\NSubstitute\bin\Debug\netstandard1.4\TestsNSubstitute.deps.json
+C:\Users\Vadym\Documents\Visual Studio 2015\Projects\DI_Home\NSubstitute\bin\Debug\netstandard1.4\TestsNSubstitute.dll
+C:\Users\Vadym\Documents\Visual Studio 2015\Projects\DI_Home\NSubstitute\bin\Debug\netstandard1.4\TestsNSubstitute.pdb
+C:\Users\Vadym\Documents\Visual Studio 2015\Projects\DI_Home\NSubstitute\obj\Debug\netstandard1.4\TestsNSubstitute.csprojResolveAssemblyReference.cache
+C:\Users\Vadym\Documents\Visual Studio 2015\Projects\DI_Home\NSubstitute\obj\Debug\netstandard1.4\TestsNSubstitute.AssemblyInfo.cs
+C:\Users\Vadym\Documents\Visual Studio 2015\Projects\DI_Home\NSubstitute\obj\Debug\netstandard1.4\TestsNSubstitute.dll
+C:\Users\Vadym\Documents\Visual Studio 2015\Projects\DI_Home\NSubstitute\obj\Debug\netstandard1.4\TestsNSubstitute.pdb
