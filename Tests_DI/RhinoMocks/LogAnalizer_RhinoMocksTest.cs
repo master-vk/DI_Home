@@ -16,8 +16,7 @@ namespace Tests_DI.RhinoMocks
         [Test]
         public void Analyze_TooShortFileName_CallLogger()
         {
-            ILogger logger = MockRepository.GenerateStub<ILogger>();
-            logger.Stub(x => x.LogError("Too short name: a.txt"));
+            ILogger logger = MockRepository.GenerateMock<ILogger>();
             LogAnalyzer analyzer = new LogAnalyzer(logger);
             analyzer.MinNameLength = 6;
             analyzer.Analyze("a.txt");

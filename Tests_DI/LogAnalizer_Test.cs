@@ -95,9 +95,8 @@ namespace Tests_DI
         [Test]
         public void overrideTest()
         {
-            FakeExtensionManager stub = new FakeExtensionManager();
-            stub.WillBeValid = true;
             TestableLogAnalyzer logan = new TestableLogAnalyzer();
+            logan.IsSupported = true;
             bool result = logan.IsValidLogFileName("lfjile.ext");
             Assert.True(result);
         }

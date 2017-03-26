@@ -17,6 +17,7 @@ namespace Tests_DI.Subtitute
             ILogger logger = Substitute.For<ILogger>();
             LogAnalyzer analyzer = new LogAnalyzer(logger);
             analyzer.MinNameLength = 6;
+
             analyzer.Analyze("a.txt");
 
             logger.Received().LogError("Too short name: a.txt");

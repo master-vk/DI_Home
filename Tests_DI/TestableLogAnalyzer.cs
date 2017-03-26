@@ -11,11 +11,10 @@ namespace Tests_DI
     {
         public bool IsSupported;
 
-        
-        public IExtensionManager Manager;
+        public IExtensionManager manager;
         protected override IExtensionManager GetManager()
         {
-            return Manager;
+            return manager;
         }
         protected override bool IsValid(string fileName)
         {
