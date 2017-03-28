@@ -44,7 +44,8 @@ namespace Tests_DI
             la.IsValidFileName("badname.foo");
             Assert.False(la.WasLastFileNameValid);
         }
-
+        [TestCase("badfile.foo", false)]
+        [TestCase("gooile.SVF", true)]
         [TestCase("badfile.foo", false)]
         [TestCase("goodfile.SVF", true)]
         public void IsValidFileName_WhenCalled_ChangesWasLastFileNameValid(string file, bool expected)
@@ -53,28 +54,25 @@ namespace Tests_DI
             la.IsValidFileName(file);
             Assert.AreEqual(expected, la.WasLastFileNameValid);
         }
-        [TestFixture]
-        public class LogAnalyzerTests
+
+        [Test]
+        public void IsValidFileName_NameSupportedExtension_ReturnsTrue()
         {
-            [Test]
-            public void
-            IsValidFileName_NameSupportedExtension_ReturnsTrue()
-            {
-                FakeExtensionManager myFakeManager = new FakeExtensionManager();
-                myFakeManager.WillBeValid = true;
-                LogAnalyzer log = new LogAnalyzer();
-                log.ExtensionManager = myFakeManager;
-                bool result = log.IsValidFileName("short.ext");
-                Assert.True(result);
-            }
+            FakeExtensionManager myFakeManager = new FakeExtensionManager();
+            myFakeManager.WillBeValid = true;
+            LogAnalyzer log = new LogAnalyzer();
+            log.ExtensionManager = myFakeManager;
+            bool result = log.IsValidFileName("short.ext");
+            Assert.True(result);
         }
+
         [Test]
         public void IsValidFileName_ExtManagerThrowsException_ReturnsFalse()
         {
             FakeExtensionManager myFakeManager = new FakeExtensionManager();
             LogAnalyzer log = MakeAnalyzer();
 
-            myFakeManager.WillThrow = new Exception("");            
+            myFakeManager.WillThrow = new Exception("");
             log.ExtensionManager = myFakeManager;
 
             bool result = log.IsValidFileName("anything.anyextension");
@@ -107,16 +105,16 @@ namespace Tests_DI
             TestableLogAnalyzer logan = new TestableLogAnalyzer();
             logan.IsSupported = true;
             bool result = logan.IsValidLogFileName("file.ext");
-            Assert.True(result,"...");
+            Assert.True(result, "...");
         }
-        
+
         [Test]
         [Ignore("not actual")]
         public void Analyze_TooShortFileName_CallsWebService()
         {
             FakeWebService mockService = new FakeWebService();
             LogAnalyzer log = new LogAnalyzer(mockService);
-            string tooShortFileName ="abc.ext";
+            string tooShortFileName = "abc.ext";
 
             log.Analyze(tooShortFileName);
 
